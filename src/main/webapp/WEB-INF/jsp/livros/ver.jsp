@@ -13,7 +13,7 @@
         <div class="col-lg-10 col-lg-offset-1">
             <h3 class="text-center">Detalhes - ${livro.titulo}</h3>
             <div class="table-responsive">
-                <table class="table table-striped table-bordered table-hover" id="dataTables-ver">
+                <table class="table table-striped table-bordered table-hover">
                     <thead>
                         <tr>
                             <th class="text-center">Titulo</th>
@@ -37,12 +37,6 @@
             <a href="${linkTo[LivrosController].confirmaExclusao(livro.isbn)}"><button type="button" class="btn btn-default"><i class="fa fa-times"></i> Remover</button></a> 
             <a href="${linkTo[LivrosController].edita(livro.isbn)}"> <button type="button" class="btn btn-default"><i class="fa fa-edit"> Editar</i></button></a>
         </div>        
-        <c:import url="/WEB-INF/jsp/scripts.jsp"></c:import>
-        
-        <script>
-            $(document).ready(function () {
-                $('#dataTables-ver').dataTable();
-            });
-        </script>        
+        <c:import url="/WEB-INF/jsp/scripts.jsp"></c:import>  
     </body>
 </html>
